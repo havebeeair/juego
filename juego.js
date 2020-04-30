@@ -1,5 +1,5 @@
+
 // GLOBALES
-let timer;
 // ATRIBUTOS ESPECIALES: Minimo en 0, Maximo en 10
 var carisma = 10;
 var fuerza = 10;
@@ -16,6 +16,8 @@ var estacas = 0; // contra zombie
 var globos = 0; // contra unitornio
 var tijeras = 0; // contra lazy :
 var escudo = false; // contra megastofeles
+
+
 
 function obtenerEscudo(vida) {
   let probEscudo = Math.random();
@@ -216,6 +218,7 @@ function abrirCofre() {
     console.log(' pero estaba vacio! 💩');
   }
 }
+
 var niveles = [lazy, unitornio, megastofeles, zombie, burlon, abrirCofre];
 
 function jugarNivel() {
